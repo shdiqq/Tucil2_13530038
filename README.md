@@ -4,6 +4,7 @@ Program ini adalah program yang dibuat untuk mencari seluruh dari masing-masing 
 
 ## Instalasi Program
 - Clone repository ini dengan cara memanggil perintah berikut pada terminal: `git clone https://github.com/shdiqq/Tucil2_13520038.git`
+- Pastikan telah menginstall numpy, pandas, matplotlib, dan sklearn
 
 ## Cara Menjalankan Program
 - Buka folder `bin`
