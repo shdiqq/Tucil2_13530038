@@ -12,7 +12,7 @@ while (True) :
     print("3. Wine")
     correct_input_j  = False
     while ( correct_input_j == False ) :
-        j = int(input("Silakan pilih dataset yang akan digunakan (0 Jika ingin keluar) >> "))
+        j = int(input("Silakan pilih dataset yang akan digunakan (0 Jika ingin keluar dari program) >> "))
         if ( (j < 0 or j > 3) == False ) :
             correct_input_j = True
 
@@ -35,12 +35,15 @@ while (True) :
     correct_input_y = False
 
     while ( correct_input_x == False ) :
-        x = int(input("Silakan pilih informasi atribut yang akan digunakan sebagai sumbu X (0 Jika ingin keluar) >> "))
+        x = int(input("Silakan pilih informasi atribut yang akan digunakan sebagai sumbu X (0 Jika ingin keluar dari program) >> "))
         if ( (x < 0 or x > length) == False ) :
-            correct_input_x = True
+            if ( x == 0 ) :
+                exit()
+            else :
+                correct_input_x = True
 
     while ( correct_input_y == False ) :
-        y = int(input("Silakan pilih informasi atribut yang akan digunakan sebagai sumbu Y (0 Jika ingin keluar) >> "))
+        y = int(input("Silakan pilih informasi atribut yang akan digunakan sebagai sumbu Y (0 Jika ingin keluar dari program) >> "))
         if ( (y < 0 or y > length) == False ) :
             if ( y == x ) :
                 correct_input_opsi = False
@@ -55,6 +58,8 @@ while (True) :
                         correct_input_opsi = True
                     else :
                         correct_input_opsi = False
+            elif ( y == 0 ) :
+                exit()
             else : 
                 correct_input_y = True
 
